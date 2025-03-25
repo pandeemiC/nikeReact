@@ -55,4 +55,12 @@
   .info-text {
     @apply font-montserrat text-slate-gray text-lg leading-7;
   }
+
+  .nav-item {
+    @apply transition duration-300 ease-in-out transform; /* Enables transition */
+  }
+
+  .nav-item:hover {
+    @apply text-coral-red scale-105; /* Changes text color to coral and scales on hover */
+  }
 }
