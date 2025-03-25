@@ -7,6 +7,7 @@ import {
   twitter,
 } from "../assets/icons";
 import {
+  nikeLebagh,
   bigShoe1,
   bigShoe2,
   bigShoe3,

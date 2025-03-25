@@ -31,6 +31,9 @@ export default {
       backgroundImage: {
         hero: "url('assets/images/collection-background.svg')",
         card: "url('assets/images/thumbnail-background.svg')",
+        newhero: "url('assets/images/NikeHeroEl.png')",
+        newherotest: "url('assets/images/NikeHeroBG.svg')",
+        justdoit: "url('assets/images/justdoit.png')",
       },
       screens: {
         wide: "1440px",
