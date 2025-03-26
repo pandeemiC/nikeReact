@@ -37,6 +37,17 @@ export default {
         justdoit: "url('assets/images/justdoit.png')",
         nikelogoBG: "url('assets/images/nikelogoBG.png')",
       },
+
+      backgroundSize: {
+        auto: "auto",
+        cover: "cover",
+        contain: "contain",
+        "50%": "50%",
+        "75%": "75%",
+        "85%": "85%",
+        16: "4rem",
+      },
+
       screens: {
         wide: "1440px",
         nikeContainer: "1280px",

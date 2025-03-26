@@ -1,13 +1,13 @@
 import Button from "../components/Button";
 import { arrowRight } from "../assets/icons";
 import { statistics } from "../constants";
-import { nikeLebagh, nikeLebaghblur } from "../assets/images";
+import { nikeLebagh, nikeLebaghblur, nikelogoBG } from "../assets/images";
 
 const Hero = () => {
   return (
     <section
       id="home"
-      className="w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 max-container m-auto pl-[6rem]"
+      className="w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 max-container m-auto pl-[6rem] bg-none bg-no-repeat nikeContainer:bg-nikelogoBG bg-85% bg-[right_-8rem_bottom_-6rem]"
     >
       <div className="relative xl:w-2/5 flex flex-col justify-center items-start w-full  max-xl:padding-x pt-28">
         <p className="text-xl font-montserrat text-coral-red">
@@ -57,7 +57,7 @@ const Hero = () => {
       </div>
 
       <div
-        className="relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40 hidden nikeContainer:flex bg-nikelogoBG bg-cover bg-center pt-[4rem]"
+        className="relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40 hidden nikeContainer:flex pt-[4rem]"
         style={{ backgroundPosition: "calc(70% - 10px) calc(80% - -40px)" }}
       >
         <img
@@ -65,14 +65,14 @@ const Hero = () => {
           alt="shoe colletion"
           width={800}
           height={502}
-          className="object-contain relative z-10"
+          className="ml-[8rem] object-contain relative z-10"
         />
         <img
           src={nikeLebaghblur}
           alt="shoe colletion"
           width={900}
           height={502}
-          className="object-contain absolute z-9"
+          className="ml-[8rem] object-contain absolute z-9"
         />
       </div>
     </section>

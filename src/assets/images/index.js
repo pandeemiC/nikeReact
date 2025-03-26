@@ -3,6 +3,7 @@ import bigShoe2 from "./big-shoe2.png";
 import bigShoe3 from "./big-shoe3.png";
 import nikeLebagh from "./nikeLebaghsolid.png";
 import nikeLebaghblur from "./nikeLebaghblur.png";
+import nikelogoBG from "./nikelogoBG.png";
 import arrowRight from "../icons/arrow-right.svg";
 
 import customer1 from "./customer1.jpeg";
@@ -25,6 +26,7 @@ import thumbnailShoe2 from "./thumbnail-shoe2.svg";
 import thumbnailShoe3 from "./thumbnail-shoe3.svg";
 
 export {
+  nikelogoBG,
   nikeLebaghblur,
   nikeLebagh,
   bigShoe1,
