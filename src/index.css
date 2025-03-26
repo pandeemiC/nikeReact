@@ -84,10 +84,10 @@
   }
 
   .nav-item:hover {
-    @apply text-coral-red scale-105 fill-coral-red; /* Changes text color to coral and scales on hover */
+    @apply text-coral-red scale-105; /* Changes text color to coral and scales on hover */
   }
 
-  .svg-icon:hover {
-    fill: var(text-coral-red);
+  .nav-item:hover .svg-icon path {
+    fill: #ff6452; /* Coral Red Color */
   }
 }
