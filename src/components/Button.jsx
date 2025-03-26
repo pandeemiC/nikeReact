@@ -4,7 +4,7 @@ const Button = ({ label, iconUrl }) => {
       {label}
       <img
         src={iconUrl}
-        alt="Arrow Right Icon"
+        alt="ArrowIcon"
         className="ml-2 rounded-full w-5 h-5"
       />
     </button>

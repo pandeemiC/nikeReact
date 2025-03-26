@@ -15,6 +15,7 @@ export default {
     },
     extend: {
       fontFamily: {
+        inter: ["Inter", "sans-serif"],
         palanquin: ["Palanquin", "sans-serif"],
         montserrat: ["Montserrat", "sans-serif"],
       },
@@ -34,9 +35,11 @@ export default {
         newhero: "url('assets/images/NikeHeroEl.png')",
         newherotest: "url('assets/images/NikeHeroBG.svg')",
         justdoit: "url('assets/images/justdoit.png')",
+        nikelogoBG: "url('assets/images/nikelogoBG.png')",
       },
       screens: {
         wide: "1440px",
+        nikeContainer: "1280px",
       },
     },
   },
