@@ -24,6 +24,14 @@
 }
 
 @layer utilities {
+  .img-large {
+    @apply w-[1000px] h-auto;
+  }
+
+  .img-larger {
+    @apply w-[1100px] h-auto;
+  }
+
   .padding {
     @apply sm:px-16 px-8 sm:py-24 py-12;
   }

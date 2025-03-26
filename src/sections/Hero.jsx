@@ -2,7 +2,7 @@ import Button from "../components/Button";
 import { arrowRight } from "../assets/icons";
 import { statistics } from "../constants";
 import { bigShoe1 } from "../assets/images";
-import { nikeLebagh } from "../assets/images/";
+import { nikeLebagh, nikeLebaghblur } from "../assets/images/";
 
 const Hero = () => {
   return (
@@ -14,10 +14,10 @@ const Hero = () => {
         <p className="text-xl font-montserrat text-coral-red">
           Our Summer Collection
         </p>
-        <h1 className="mt-10 font-palanquin text-8xl max-sm:text-[72px] max-sm:leading-[82px] font-bold">
+        <h1 className="mt-10 font-palanquin text-4xl max-sm:text-[72px] max-sm:leading-[82px] font-bold">
           <span className="relative z-10 pr-10">The New Arrival</span>
           <br />
-          <span className="text-coral-red inline-block mt-3">Nike</span> Shoes
+          <span className="text-coral-red inline-block mt-3">L E B A G H</span>
         </h1>
         <p className="font-montserrat text-slate-gray text-lg leading-8 mt-6 mb-14 sm:max-w-sm">
           Discover stylish Nike arrivals, quality comfort, and innovation for
@@ -36,11 +36,16 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40 rounded-lg">
+      <div className="relative flex justify-center items-center xl:min-h-screen max-xl:py-40 rounded-lg">
         <img
           src={nikeLebagh}
-          alt="Shoe Collection"
+          alt="LebaghSolid"
           className="relative z-10 img-large"
+        />
+        <img
+          src={nikeLebaghblur}
+          alt="LebaghBlur"
+          className="absolute z-9 img-larger"
         />
       </div>
     </section>
