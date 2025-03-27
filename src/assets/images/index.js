@@ -26,6 +26,9 @@ import thumbnailBackground from "./thumbnail-background.svg";
 import thumbnailShoe1 from "./thumbnail-shoe1.svg";
 import thumbnailShoe2 from "./thumbnail-shoe2.svg";
 import thumbnailShoe3 from "./thumbnail-shoe3.svg";
+import thumbnailnikeSB from "./thumbnailnikeSB.png";
+import thumbnailnikeChrisPaul from "./thumbnailnikeChrisPaul.png";
+import thumbnailnikeLebagh from "./thumbnailnikeLebagh.png";
 
 export {
   nikeSB,
@@ -47,6 +50,9 @@ export {
   shoe7,
   shoe8,
   thumbnailBackground,
+  thumbnailnikeChrisPaul,
+  thumbnailnikeSB,
+  thumbnailnikeLebagh,
   thumbnailShoe1,
   thumbnailShoe2,
   thumbnailShoe3,

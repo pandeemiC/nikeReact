@@ -1,6 +1,20 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  safelist: [
+    "text-coral-red",
+    "text-red-500",
+    "text-sky-500",
+    "bg-coral-red",
+    "bg-red-500",
+    "bg-sky-500",
+    "border-coral-red",
+    "border-red-500",
+    "border-sky-500",
+    "nikelogoBG",
+    "nikelogoBGRED",
+    "nikelogoBGBLUE",
+  ],
   theme: {
     fontSize: {
       xs: ["12px", "16px"],
@@ -11,6 +25,7 @@ export default {
       "2xl": ["24px", "29.26px"],
       "3xl": ["28px", "50px"],
       "4xl": ["48px", "58px"],
+      "5xl": ["75px", "80px"],
       "8xl": ["96px", "106px"],
     },
     extend: {
@@ -36,6 +51,8 @@ export default {
         newherotest: "url('assets/images/NikeHeroBG.svg')",
         justdoit: "url('assets/images/justdoit.png')",
         nikelogoBG: "url('assets/images/nikelogoBG.png')",
+        nikelogoBGRED: "url('assets/images/nikelogoBGRED.png')",
+        nikelogoBGBLUE: "url('assets/images/nikelogoBGBLUE.png')",
       },
 
       backgroundSize: {

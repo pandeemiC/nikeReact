@@ -21,6 +21,9 @@ import {
   shoe5,
   shoe6,
   shoe7,
+  thumbnailnikeChrisPaul,
+  thumbnailnikeSB,
+  thumbnailnikeLebagh,
   thumbnailShoe1,
   thumbnailShoe2,
   thumbnailShoe3,
@@ -35,16 +38,19 @@ export const navLinks = [
 
 export const shoes = [
   {
-    thumbnail: thumbnailShoe1,
+    thumbnail: nikeLebagh,
     bigShoe: nikeLebagh,
+    shoeName: "L E B A G H",
   },
   {
-    thumbnail: thumbnailShoe2,
+    thumbnail: nikeSB,
     bigShoe: nikeSB,
+    shoeName: "OG SATIN",
   },
   {
-    thumbnail: thumbnailShoe3,
+    thumbnail: nikeChrisPaul,
     bigShoe: nikeChrisPaul,
+    shoeName: "CHRIS PAUL",
   },
 ];
 
