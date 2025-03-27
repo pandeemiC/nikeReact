@@ -15,8 +15,10 @@
 
 @layer components {
   .max-container {
-    max-width: 1640px;
-    margin: 0 auto;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
   }
 
   .enlarged-image {
@@ -25,12 +27,6 @@
       -25%,
       0
     ); /* Adjust the translation to center the image */
-  }
-
-  @media (max-width: 1280px) {
-    .nike-image-container {
-      display: visible;
-    }
   }
 
   .input {

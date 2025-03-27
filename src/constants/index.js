@@ -7,6 +7,8 @@ import {
   twitter,
 } from "../assets/icons";
 import {
+  nikeSB,
+  nikeChrisPaul,
   arrowRight,
   nikeLebaghblur,
   nikeLebagh,
@@ -34,15 +36,15 @@ export const navLinks = [
 export const shoes = [
   {
     thumbnail: thumbnailShoe1,
-    bigShoe: bigShoe1,
+    bigShoe: nikeLebagh,
   },
   {
     thumbnail: thumbnailShoe2,
-    bigShoe: bigShoe2,
+    bigShoe: nikeSB,
   },
   {
     thumbnail: thumbnailShoe3,
-    bigShoe: bigShoe3,
+    bigShoe: nikeChrisPaul,
   },
 ];
 
