@@ -9,12 +9,12 @@ const Nav = () => {
         <a href="#" className="hover:nav-item transformer">
           <img src={headerLogo} alt="Logo" width={150} height={29} />
         </a>
-        <ul className="flex-1 flex justify-center items-center gap-16 max-lg:hidden">
+        <ul className="flex-1 flex justify-center items-center gap-5 max-lg:hidden uppercase">
           {navLinks.map((item) => (
             <li key={item.label}>
               <a
                 href={item.href}
-                className="font-inter font-light leading-normal text-lg border border-slate-gray p-[0.85rem] hover:bg-white hover:border-slate-gray bg-slate-gray rounded-3xl text-white hover:text-black transformer"
+                className="font-inter font-bold leading-normal text-md p-[0.85rem] text-slate-gray hover:text-coral-red transformer"
               >
                 {item.label}
               </a>

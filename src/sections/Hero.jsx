@@ -7,8 +7,9 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 max-container m-auto pl-[6rem] bg-none bg-no-repeat nikeContainer:bg-nikelogoBG bg-85% bg-[right_-8rem_bottom_-6rem]"
+      className="w-full flex xl:flex-row flex-col justify-center min-h-screen min-w-screen gap-10 max-container m-auto pl-[6rem] bg-none bg-no-repeat nikeContainer:bg-nikelogoBG bg-85% bg-[right_-8rem_bottom_-4rem]"
     >
+      {/* PLEASE FIX THIS FUCKING SHIT WHERE YOU HAVE TO MAKE SHIT VISIBLE CONTAINERS! */}
       <div className="relative xl:w-2/5 flex flex-col justify-center items-start w-full  max-xl:padding-x pt-28">
         <p className="text-xl font-montserrat text-coral-red">
           Our Summer collections
