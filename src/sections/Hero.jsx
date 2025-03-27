@@ -1,5 +1,6 @@
 import Button from "../components/Button";
 import ShoeCard from "../components/ShoeCard";
+import classNames from "classnames";
 import { useState } from "react";
 import { arrowRight } from "../assets/icons";
 import { statistics, shoes } from "../constants";
@@ -11,7 +12,7 @@ import {
 } from "../assets/images";
 
 const Hero = () => {
-  const [shoeName, setShoeName] = useState("L E B A G H");
+  const [shoesName, setShoesName] = useState("L E B A G H");
   const [bigShoeImg, setBigShoeImg] = useState(nikeLebagh);
   const [theme, setTheme] = useState({
     bgClass: "nikelogoBG",
@@ -23,8 +24,8 @@ const Hero = () => {
 
   const handleThumbnailClick = (shoe) => {
     setBigShoeImg(shoe.bigShoe);
-    setShoeName(shoe.shoeName);
-    switch (shoe.shoeName) {
+    setShoesName(shoe.shoeName);
+    switch (shoe.shoesName) {
       case "OG SATIN":
         setTheme({
           bgClass: "nikelogoBGRED",
@@ -55,7 +56,7 @@ const Hero = () => {
   };
 
   const changeShoeName = (name) => {
-    setShoeName(name);
+    setShoesName(name);
   };
 
   return (
@@ -77,7 +78,7 @@ const Hero = () => {
             <span
               className={`font-inter ${theme.fontWeight} italic text-center text-${theme.textColor} inline-block mt-3`}
             >
-              {shoeName}
+              {shoesName}
             </span>
           </h1>
           <p className="font-montserrat text-slate-gray text-lg leading-8 mt-6 mb-11 sm:max-w-sm">
@@ -95,19 +96,19 @@ const Hero = () => {
             {statistics.map((stat, index) => (
               <div key={index}>
                 <p className="text-4xl font-palanquin font-bold">
-                  {stat.value
-                    .split("+")
-                    .reduce(
-                      (prev, current, index) =>
-                        index === 0
-                          ? [current]
-                          : [
-                              ...prev,
-                              <span className="text-slate-gray">+</span>,
-                              current,
-                            ],
-                      []
-                    )}
+                  {stat.value.split("+").reduce(
+                    (prev, current, index) =>
+                      index === 0
+                        ? [current]
+                        : [
+                            ...prev,
+                            <span key={index} className="text-slate-gray">
+                              +
+                            </span>,
+                            current,
+                          ],
+                    []
+                  )}
                 </p>
                 <p className="leading-7 font-montserrat text-slate-gray">
                   {stat.label}
@@ -138,12 +139,13 @@ const Hero = () => {
 
           <div className="z-10">
             {shoes.map((shoe) => (
-              <div key={shoe} className="my-5">
+              <div key={shoe.shoeName} className="my-5">
                 <ShoeCard
                   imgUrl={shoe}
                   changeToBigShoeImage={(shoe) => setBigShoeImg(shoe)}
                   bigShoeImg={bigShoeImg}
                   changeShoeName={changeShoeName}
+                  onClick={() => handleThumbnailClick(shoe)}
                   theme={theme}
                 />
               </div>
