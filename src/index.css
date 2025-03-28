@@ -80,7 +80,7 @@
   }
 
   .nav-item:hover {
-    @apply text-coral-red scale-105; /* Changes text color to coral and scales on hover */
+    @apply text-coral-red scale-110; /* Changes text color to coral and scales on hover */
   }
 
   .nav-border:hover {
