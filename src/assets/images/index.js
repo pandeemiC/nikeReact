@@ -6,6 +6,8 @@ import nikeChrisPaul from "./nikeChrisPaul.png";
 import nikeLebagh from "./nikeLebaghsolid.png";
 import nikeLebaghblur from "./nikeLebaghblur.png";
 import nikelogoBG from "./nikelogoBG.png";
+import nikelogoBGRED from "./nikelogoBGRED.png";
+import nikelogoBGBLUE from "./nikelogoBGBLUE.png";
 import arrowRight from "../icons/arrow-right.svg";
 
 import customer1 from "./customer1.jpeg";
@@ -34,6 +36,8 @@ export {
   nikeSB,
   nikeChrisPaul,
   nikelogoBG,
+  nikelogoBGRED,
+  nikelogoBGBLUE,
   nikeLebaghblur,
   nikeLebagh,
   bigShoe1,

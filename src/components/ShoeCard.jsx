@@ -3,6 +3,7 @@ const ShoeCard = ({
   changeToBigShoeImage,
   bigShoeImg,
   changeShoeName,
+  handleThumbnailClick,
   theme,
 }) => {
   const handleClick = () => {
@@ -15,11 +16,9 @@ const ShoeCard = ({
   return (
     <div
       className={`rounded-xl border-2 ${
-        bigShoeImg === imgUrl.bigShoe
-          ? "border-coral-red"
-          : "border-transparent"
-      } cursor-pointer max-sm:flex-1`}
-      onClick={handleClick}
+        bigShoeImg === imgUrl.bigShoe ? theme.borderClass : "border-transparent"
+      } cursor-pointer max-sm:flex-1 transformer`}
+      onClick={() => handleThumbnailClick(imgUrl)}
     >
       <div className="flex justify-center items-center bg-justdoit bg-center bg-cover rounded-xl border border-shadow-2xl sm:w-40 sm:h-40 max-sm:p-4">
         <img

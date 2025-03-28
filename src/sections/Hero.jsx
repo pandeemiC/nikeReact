@@ -1,7 +1,6 @@
 import Button from "../components/Button";
 import ShoeCard from "../components/ShoeCard";
-import classNames from "classnames";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { arrowRight } from "../assets/icons";
 import { statistics, shoes } from "../constants";
 import {
@@ -9,6 +8,7 @@ import {
   nikeLebaghblur,
   nikeSB,
   nikeChrisPaul,
+  nikelogoBG,
 } from "../assets/images";
 
 const Hero = () => {
@@ -22,19 +22,29 @@ const Hero = () => {
     fontWeight: "font-light",
   });
 
+  console.log(`bg-${theme.bgClass}`, `text-${theme.textColor}`);
+
+  useEffect(() => {
+    console.log("Theme after update:", theme);
+  }, [theme]);
+
   const handleThumbnailClick = (shoe) => {
+    console.log("Clicked shoe name:", shoe.shoeName);
+
     setBigShoeImg(shoe.bigShoe);
     setShoesName(shoe.shoeName);
-    switch (shoe.shoesName) {
+
+    switch (shoe.shoeName) {
       case "OG SATIN":
         setTheme({
           bgClass: "nikelogoBGRED",
-          textColor: "red-500",
-          buttonColor: "red-500",
-          borderClass: "border-red-500",
-          fontWeight: "font-semibold",
+          textColor: "red-600",
+          buttonColor: "red-600",
+          borderClass: "border-red-600",
+          fontWeight: "font-black",
         });
         break;
+
       case "CHRIS PAUL":
         setTheme({
           bgClass: "nikelogoBGBLUE",
@@ -42,8 +52,11 @@ const Hero = () => {
           buttonColor: "sky-500",
           borderClass: "border-sky-500",
           fontWeight: "font-extrabold",
+          fontType: "font-palanquin",
+          fontNonIta: "not-italic",
         });
         break;
+
       default:
         setTheme({
           bgClass: "nikelogoBG",
@@ -55,6 +68,7 @@ const Hero = () => {
     }
   };
 
+  console.log("Theme updated to:", theme);
   const changeShoeName = (name) => {
     setShoesName(name);
   };
@@ -63,7 +77,7 @@ const Hero = () => {
     <div className="max-container">
       <section
         id="home"
-        className={`w-full flex xl:flex-row flex-col justify-center min-h-screen min-w-screen gap-10 max-container m-auto pl-[6rem] bg-none bg-no-repeat nikeContainer:bg-${theme.bgClass} bg-85% bg-[right_-8rem_bottom_-4rem]`}
+        className={`w-full flex xl:flex-row flex-col justify-center min-h-screen min-w-screen gap-10 max-container m-auto pl-[6rem] bg-no-repeat bg-85% bg-[right_-8rem_bottom_-4rem] bg-${theme.bgClass} max-nikeContainer:bg-none`}
       >
         <div className="relative xl:w-2/5 flex flex-col justify-center items-start w-full  max-xl:padding-x pt-28">
           <p className={`text-xl font-inter text-${theme.textColor}`}>
@@ -76,7 +90,7 @@ const Hero = () => {
             </span>
             <br />
             <span
-              className={`font-inter ${theme.fontWeight} italic text-center text-${theme.textColor} inline-block mt-3`}
+              className={`font-inter transformer ${theme.fontNonIta} ${theme.fontWeight} italic text-center text-${theme.textColor} inline-block mt-3 ${theme.fontType}`}
             >
               {shoesName}
             </span>
@@ -89,7 +103,7 @@ const Hero = () => {
           <Button
             label="Shop now"
             iconUrl={arrowRight}
-            customClass={`bg-${theme.buttonColor} border-${theme.buttonColor} hover:text-${theme.buttonColor}`}
+            customClass={`bg-${theme.buttonColor} border-${theme.buttonColor} hover:text-${theme.textColor} text-white`}
           />
 
           <div className="flex justify-start items-start flex-wrap w-full mt-14 gap-16">
@@ -117,7 +131,6 @@ const Hero = () => {
             ))}
           </div>
         </div>
-
         <div
           className="relative flex-1 flex justify-center items-center xl:min-h-screen max-container hidden nikeContainer:flex max-xl:py-40 pt-[4rem]"
           style={{ backgroundPosition: "calc(70% - 10px) calc(80% - -40px)" }}
@@ -145,7 +158,7 @@ const Hero = () => {
                   changeToBigShoeImage={(shoe) => setBigShoeImg(shoe)}
                   bigShoeImg={bigShoeImg}
                   changeShoeName={changeShoeName}
-                  onClick={() => handleThumbnailClick(shoe)}
+                  handleThumbnailClick={handleThumbnailClick}
                   theme={theme}
                 />
               </div>
