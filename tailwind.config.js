@@ -68,6 +68,7 @@ export default {
         nikelogoBG: "url('assets/images/nikelogoBG.png')",
         nikelogoBGRED: "url('assets/images/nikelogoBGRED.png')",
         nikelogoBGBLUE: "url('assets/images/nikelogoBGBLUE.png')",
+        bentoBG: "url('assets/images/bentoBG.png')",
       },
 
       backgroundSize: {

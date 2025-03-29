@@ -10,6 +10,13 @@ import nikelogoBGRED from "./nikelogoBGRED.png";
 import nikelogoBGBLUE from "./nikelogoBGBLUE.png";
 import arrowRight from "../icons/arrow-right.svg";
 
+import bento1 from "../images/nikeBento1.jpg";
+import bento2 from "../images/nikeBento2.jpg";
+import bento3 from "../images/nikeBento3.jpg";
+import bento4 from "../images/nikeBento4.jpg";
+import bento5 from "../images/nikeBento5.jpg";
+import bento6 from "../images/nikeBento6.jpg";
+
 import customer1 from "./customer1.jpeg";
 import customer2 from "./customer2.svg";
 
@@ -45,6 +52,12 @@ export {
   bigShoe3,
   customer1,
   customer2,
+  bento1,
+  bento2,
+  bento3,
+  bento4,
+  bento5,
+  bento6,
   footerLogo,
   headerLogo,
   offer,
