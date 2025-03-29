@@ -62,24 +62,24 @@ export const statistics = [
 
 export const products = [
   {
-    imgURL: shoe4,
-    name: "Nike Air Jordan-01",
-    price: "$200.20",
+    imgUrl: shoe4,
+    name: "Nike Flywire",
+    price: "$248.20",
   },
   {
-    imgURL: shoe5,
-    name: "Nike Air Jordan-10",
-    price: "$210.20",
+    imgUrl: shoe5,
+    name: "Nike Air Force Jordan",
+    price: "$180.20",
   },
   {
-    imgURL: shoe6,
-    name: "Nike Air Jordan-100",
+    imgUrl: shoe6,
+    name: "Nike AirMax Sneaker",
+    price: "$143.20",
+  },
+  {
+    imgUrl: shoe7,
+    name: "Nike Air Force-1",
     price: "$220.20",
-  },
-  {
-    imgURL: shoe7,
-    name: "Nike Air Jordan-001",
-    price: "$230.20",
   },
 ];
 

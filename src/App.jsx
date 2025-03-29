@@ -2,6 +2,7 @@ import {
   CustomerReviews,
   Footer,
   Hero,
+  Gallery,
   PopularProducts,
   SpecialOffer,
   Subscriber,
@@ -20,11 +21,11 @@ const App = () => (
       <Hero />
     </section>
 
-    <section className="padding">
-      <PopularProducts />
+    <section>
+      <Gallery />
     </section>
     <section className="padding">
-      <SuperQuality />
+      <PopularProducts />
     </section>
     <section className="padding-x py-10">
       <Services />

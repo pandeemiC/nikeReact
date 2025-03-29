@@ -1,71 +1,28 @@
-import {
-  bento1,
-  bento2,
-  bento3,
-  bento4,
-  bento5,
-  bento6,
-} from "../assets/images";
+import React from "react";
+import PopularProductCard from "../components/PopularProductCard";
+import { products } from "../constants";
 
 const PopularProducts = () => {
   return (
-    <div className="max-container h-screen mx-auto flex flex-col justify-center mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-16 bg-justdoit bg-cover">
-      <h2 className="text-center text-4xl font-light italic mb-10 md:mb-20 flex-shrink-0 font-inter">
-        Step Into What Feels Good
-      </h2>
-      <section className="grid grid-cols-1 md:grid-cols-6 gap-4 flex-grow overflow-hidden xl:px-[5rem]">
-        {/* First Image - Covers 3 boxes on top */}
-        <div className="md:col-span-6 max-sm:ml-8 overflow-hidden rounded-xl shadow-xl">
-          <img
-            src={bento1}
-            alt="Bento Image 1"
-            className="w-full h-full object-cover rounded-xl"
-          />
+    <div className="">
+      <section id="products" className="max-container max-sm:mt-12">
+        <div className="flex flex-col justify-start gap-5">
+          <h2 className="text-4xl font-inter uppercase italic font-light">
+            Our{" "}
+            <span className="bg-gradient-to-r from-coral-red to-orange-300 bg-clip-text text-transparent font-bold not-italic">
+              Popular
+            </span>{" "}
+            Products
+          </h2>
+          <p className="lg:max-w-lg mt-2 font-montserrat text-slate-gray">
+            Experience top-notch quality and style with our sought-after
+            selections. Discover a world of comfort, deisgn, and value.
+          </p>
         </div>
-
-        {/* Second Image - Covers half of 3 */}
-        <div className="md:col-span-3 max-sm:mr-8 overflow-hidden rounded-xl">
-          <img
-            src={bento2}
-            alt="Bento Image 2"
-            className="w-full h-full object-cover rounded-xl"
-          />
-        </div>
-
-        {/* Third Image - Covers other half of 3 */}
-        <div className="md:col-span-3 max-sm:ml-8 overflow-hidden rounded-xl">
-          <img
-            src={bento3}
-            alt="Bento Image 3"
-            className="w-full h-full object-cover rounded-xl"
-          />
-        </div>
-
-        {/* Fourth Image - Covers 1 box */}
-        <div className="md:col-span-2 max-sm:mr-8 overflow-hidden rounded-xl">
-          <img
-            src={bento4}
-            alt="Bento Image 4"
-            className="w-full h-full object-cover rounded-xl"
-          />
-        </div>
-
-        {/* Fifth Image - Covers 1 box next to 4th */}
-        <div className="md:col-span-2 max-sm:ml-8 overflow-hidden rounded-xl">
-          <img
-            src={bento5}
-            alt="Bento Image 5"
-            className="w-full h-full object-cover rounded-xl"
-          />
-        </div>
-
-        {/* Sixth Image - Covers 1 box next to 5th */}
-        <div className="md:col-span-2 max-sm:mr-8 overflow-hidden rounded-xl">
-          <img
-            src={bento6}
-            alt="Bento Image 6"
-            className="w-full h-full object-cover rounded-xl"
-          />
+        <div className="mt-16 grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 sm:gap-4 gap-14">
+          {products.map((product) => (
+            <PopularProductCard key={product.name} {...product} />
+          ))}
         </div>
       </section>
     </div>

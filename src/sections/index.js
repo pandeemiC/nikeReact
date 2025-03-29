@@ -1,4 +1,5 @@
 import Hero from "./Hero";
+import Gallery from "./Gallery";
 import SuperQuality from "./SuperQuality";
 import SpecialOffer from "./SpecialOffer";
 import Subscriber from "./Subscriber";
@@ -13,6 +14,7 @@ export {
   SpecialOffer,
   Subscriber,
   Footer,
+  Gallery,
   PopularProducts,
   Services,
   CustomerReviews,
