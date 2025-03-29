@@ -65,21 +65,25 @@ export const products = [
     imgUrl: shoe4,
     name: "Nike Flywire",
     price: "$248.20",
+    rating: "4.3",
   },
   {
     imgUrl: shoe5,
     name: "Nike Air Force Jordan",
     price: "$180.20",
+    rating: "4.8",
   },
   {
     imgUrl: shoe6,
     name: "Nike AirMax Sneaker",
     price: "$143.20",
+    rating: "4.5",
   },
   {
     imgUrl: shoe7,
     name: "Nike Air Force-1",
     price: "$220.20",
+    rating: "4.9",
   },
 ];
 
