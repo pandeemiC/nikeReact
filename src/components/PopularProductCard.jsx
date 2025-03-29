@@ -1,5 +1,6 @@
 import React from "react";
 import { star } from "../assets/icons";
+import { nikeChrisPaul } from "../assets/images";
 
 const PopularProductCard = ({ imgUrl, name, price }) => {
   return (
