@@ -16,7 +16,7 @@ const App = () => (
     <main className="relative">
       <Nav />
     </main>
-    <section className="padding-b">
+    <section>
       <Hero />
     </section>
 
