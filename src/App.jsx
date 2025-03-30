@@ -24,6 +24,7 @@ const App = () => {
     fontWeight: "font-light",
     imgClass: nikeSuperImgDef,
     gradientLight: "orangeLightBG",
+    justdoitBG: "justdoitOrangeBG",
   });
 
   return (
@@ -36,7 +37,7 @@ const App = () => {
       </section>
 
       <section>
-        <Gallery />
+        <Gallery theme={theme} />
       </section>
       <section className="padding">
         <PopularProducts theme={theme} />

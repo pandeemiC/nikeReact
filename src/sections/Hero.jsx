@@ -40,6 +40,7 @@ const Hero = ({ theme, setTheme }) => {
           fontWeight: "font-black",
           imgClass: nikeSuperImgRed,
           gradientClass: "redLightBG",
+          justdoitBG: "justdoitRedBG",
         });
         break;
 
@@ -54,6 +55,7 @@ const Hero = ({ theme, setTheme }) => {
           fontNonIta: "not-italic",
           imgClass: nikeSuperImgBlue,
           gradientClass: "blueLightBG",
+          justdoitBG: "justdoitBlueBG",
         });
         break;
 
@@ -66,6 +68,7 @@ const Hero = ({ theme, setTheme }) => {
           fontWeight: "font-light",
           imgClass: nikeSuperImgDef,
           gradientClass: "orangeLightBG",
+          justdoitBG: "justdoitOrangeBG",
         });
     }
   };
