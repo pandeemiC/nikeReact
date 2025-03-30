@@ -32,6 +32,7 @@ export default {
     'bg-[url("assets/images/nikelogoBG.png")]',
     'bg-[url("assets/images/nikelogoBGRED.png")]',
     'bg-[url("assets/images/nikelogoBGBLUE.png")]',
+    "hover:!grayscale-0",
   ],
   theme: {
     fontSize: {
@@ -90,5 +91,6 @@ export default {
       },
     },
   },
+
   plugins: [],
 };

@@ -43,8 +43,8 @@ const App = () => {
       <section className="padding-without">
         <SuperQuality theme={theme} />
       </section>
-      <section className="padding-x py-10">
-        <Services />
+      <section className="padding-without">
+        <Services theme={theme} />
       </section>
       <section className="padding">
         <SpecialOffer />

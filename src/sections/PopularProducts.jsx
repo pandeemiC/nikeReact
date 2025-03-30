@@ -23,7 +23,7 @@ const PopularProducts = ({ theme }) => {
         </div>
 
         <div
-          className={`mt-16 grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 sm:gap-4 gap-14 ${theme.borderClass} border-t-2 pt-8`}
+          className={`mt-16 grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 sm:gap-4 gap-14 pt-2`}
         >
           {products.map((product) => (
             <PopularProductCard key={product.name} {...product} theme={theme} />

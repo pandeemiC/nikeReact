@@ -51,7 +51,7 @@ const SuperQuality = ({ theme }) => {
           src={theme.imgClass}
           width={420}
           height={420}
-          className="rounded-xl shadow-xl"
+          className="rounded-xl shadow-xl object-contain"
           alt="Image"
         />
       </div>

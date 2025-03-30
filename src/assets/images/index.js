@@ -10,6 +10,11 @@ import nikelogoBGRED from "./nikelogoBGRED.png";
 import nikelogoBGBLUE from "./nikelogoBGBLUE.png";
 import arrowRight from "../icons/arrow-right.svg";
 
+import mensService from "../images/mensService.jpg";
+import kidsService from "../images/kidsService.jpg";
+import womensService from "../images/womensService.jpg";
+import jordansService from "../images/jordansService.jpg";
+
 import bento1 from "../images/nikeBento1.jpg";
 import bento2 from "../images/nikeBento2.jpg";
 import bento3 from "../images/nikeBento3.jpg";
@@ -43,6 +48,10 @@ import thumbnailnikeChrisPaul from "./thumbnailnikeChrisPaul.png";
 import thumbnailnikeLebagh from "./thumbnailnikeLebagh.png";
 
 export {
+  kidsService,
+  mensService,
+  womensService,
+  jordansService,
   nikeSuperImgRed,
   nikeSuperImgDef,
   nikeSuperImgBlue,
