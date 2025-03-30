@@ -26,7 +26,7 @@ const SuperQuality = ({ theme }) => {
             Quality{" "}
           </span>
         </h2>
-        <p className="mt-4 lg:max-w-lg info-text">
+        <p className="mt-4 lg:max-w-lg info-text py-8">
           Ensuring premium comfort and style, our meticulously crafted footwear
           is designed to eleveate your experience, providing you with unmatched
           quality innovation, and a touch of elegance.
@@ -44,6 +44,7 @@ const SuperQuality = ({ theme }) => {
       </div>
 
       {/*  IMPLEMENT CAROUSEL ON THIS DIV WHERE EACH IMG IS BACK TO BACK! */}
+      {/*  IMPLEMENT GRADIENT LIGHT DEPENDING ON WHAT THEME IT IS AS BG! */}
 
       <div className="flex-1 flex justify-center items-center">
         <img
