@@ -10,13 +10,14 @@ import { services } from "../constants";
 const Services = ({ theme }) => {
   return (
     <section id="services" className="max-container max-sm:mt-12 py-16">
-      <div className="flex justify-center items-center gap-6 flex-wrap">
+      <div className="flex flex-wrap justify-center gap-6">
         {services.map((service) => (
-          <ServicesCard
-            imgUrl={service.imgUrl}
-            label={service.label}
+          <div
             key={service.label}
-          />
+            className="w-full sm:w-[calc(50%-1.5rem)] xl:w-[calc(25%-1.5rem)]"
+          >
+            <ServicesCard imgUrl={service.imgUrl} label={service.label} />
+          </div>
         ))}
       </div>
     </section>
