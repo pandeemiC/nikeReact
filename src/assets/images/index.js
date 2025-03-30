@@ -23,6 +23,9 @@ import customer2 from "./customer2.svg";
 import footerLogo from "./footer-logo.svg";
 import headerLogo from "./header-logo.svg";
 
+import nikeSuperImgRed from "./nikeSuperImgRed.jpg";
+import nikeSuperImgDef from "./nikeSuperImgDef.jpg";
+import nikeSuperImgBlue from "./nikeSuperImgBlue.jpg";
 import offer from "./offer.svg";
 
 import shoe4 from "./shoe4.png";
@@ -40,6 +43,9 @@ import thumbnailnikeChrisPaul from "./thumbnailnikeChrisPaul.png";
 import thumbnailnikeLebagh from "./thumbnailnikeLebagh.png";
 
 export {
+  nikeSuperImgRed,
+  nikeSuperImgDef,
+  nikeSuperImgBlue,
   nikeSB,
   nikeChrisPaul,
   nikelogoBG,

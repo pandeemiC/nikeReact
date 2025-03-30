@@ -47,6 +47,10 @@
     @apply sm:px-16 px-8 sm:py-24 py-12;
   }
 
+  .padding-without {
+    @apply sm:px-16 px-8 py-12;
+  }
+
   .padding-x {
     @apply sm:px-16 px-8;
   }

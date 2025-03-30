@@ -9,18 +9,14 @@ import {
   nikeSB,
   nikeChrisPaul,
   nikelogoBG,
+  nikeSuperImgBlue,
+  nikeSuperImgDef,
+  nikeSuperImgRed,
 } from "../assets/images";
 
-const Hero = () => {
+const Hero = ({ theme, setTheme }) => {
   const [shoesName, setShoesName] = useState("L E B A G H");
   const [bigShoeImg, setBigShoeImg] = useState(nikeLebagh);
-  const [theme, setTheme] = useState({
-    bgClass: "nikelogoBG",
-    textColor: "coral-red",
-    buttonColor: "coral-red",
-    borderClass: "border-coral-red",
-    fontWeight: "font-light",
-  });
 
   console.log(`bg-${theme.bgClass}`, `text-${theme.textColor}`);
 
@@ -42,6 +38,7 @@ const Hero = () => {
           buttonColor: "red-600",
           borderClass: "border-red-600",
           fontWeight: "font-black",
+          imgClass: nikeSuperImgRed,
         });
         break;
 
@@ -54,6 +51,7 @@ const Hero = () => {
           fontWeight: "font-extrabold",
           fontType: "font-palanquin",
           fontNonIta: "not-italic",
+          imgClass: nikeSuperImgBlue,
         });
         break;
 
@@ -64,6 +62,7 @@ const Hero = () => {
           buttonColor: "coral-red",
           borderClass: "border-coral-red",
           fontWeight: "font-light",
+          imgClass: nikeSuperImgDef,
         });
     }
   };

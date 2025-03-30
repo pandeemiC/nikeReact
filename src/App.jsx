@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   CustomerReviews,
   Footer,
@@ -10,42 +11,55 @@ import {
   SuperQuality,
 } from "./sections";
 
+import { nikeSuperImgDef } from "./assets/images";
+
 import Nav from "./components/Nav";
 
-const App = () => (
-  <>
-    <main className="relative">
-      <Nav />
-    </main>
-    <section>
-      <Hero />
-    </section>
+const App = () => {
+  const [theme, setTheme] = useState({
+    bgClass: "nikelogoBG",
+    textColor: "coral-red",
+    buttonColor: "coral-red",
+    borderClass: "border-coral-red",
+    fontWeight: "font-light",
+    imgClass: nikeSuperImgDef,
+  });
 
-    <section>
-      <Gallery />
-    </section>
-    <section className="padding">
-      <PopularProducts />
-    </section>
-    <section className="padding">
-      <SuperQuality />
-    </section>
-    <section className="padding-x py-10">
-      <Services />
-    </section>
-    <section className="padding">
-      <SpecialOffer />
-    </section>
-    <section className="padding bg-pale-blue">
-      <CustomerReviews />
-    </section>
-    <section className="padding-x sm:py-32 py-16 w-full">
-      <Subscriber />
-    </section>
-    <section className="padding bg-black padding-x padding-t pb-8">
-      <Footer />
-    </section>
-  </>
-);
+  return (
+    <>
+      <main className="relative">
+        <Nav />
+      </main>
+      <section>
+        <Hero theme={theme} setTheme={setTheme} />
+      </section>
+
+      <section>
+        <Gallery />
+      </section>
+      <section className="padding">
+        <PopularProducts theme={theme} />
+      </section>
+      <section className="padding-without">
+        <SuperQuality theme={theme} />
+      </section>
+      <section className="padding-x py-10">
+        <Services />
+      </section>
+      <section className="padding">
+        <SpecialOffer />
+      </section>
+      <section className="padding bg-pale-blue">
+        <CustomerReviews />
+      </section>
+      <section className="padding-x sm:py-32 py-16 w-full">
+        <Subscriber />
+      </section>
+      <section className="padding bg-black padding-x padding-t pb-8">
+        <Footer />
+      </section>
+    </>
+  );
+};
 
 export default App;
