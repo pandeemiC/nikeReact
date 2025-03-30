@@ -9,7 +9,10 @@ import { services } from "../constants";
 
 const Services = ({ theme }) => {
   return (
-    <section id="services" className="max-container max-sm:mt-12 py-16">
+    <section
+      id="services"
+      className="max-container max-sm:mt-12 py-16 bg-justdoit bg-cover"
+    >
       <div className="flex flex-wrap justify-center gap-6">
         {services.map((service) => (
           <div

@@ -39,6 +39,7 @@ const Hero = ({ theme, setTheme }) => {
           borderClass: "border-red-600",
           fontWeight: "font-black",
           imgClass: nikeSuperImgRed,
+          gradientClass: "redLightBG",
         });
         break;
 
@@ -52,6 +53,7 @@ const Hero = ({ theme, setTheme }) => {
           fontType: "font-palanquin",
           fontNonIta: "not-italic",
           imgClass: nikeSuperImgBlue,
+          gradientClass: "blueLightBG",
         });
         break;
 
@@ -63,6 +65,7 @@ const Hero = ({ theme, setTheme }) => {
           borderClass: "border-coral-red",
           fontWeight: "font-light",
           imgClass: nikeSuperImgDef,
+          gradientClass: "orangeLightBG",
         });
     }
   };

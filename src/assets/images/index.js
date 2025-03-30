@@ -22,6 +22,10 @@ import bento4 from "../images/nikeBento4.jpg";
 import bento5 from "../images/nikeBento5.jpg";
 import bento6 from "../images/nikeBento6.jpg";
 
+import orangeLightBG from "../images/orangeLightBG.png";
+import blueLightBG from "../images/blueLightBG.png";
+import redLightBG from "../images/redLightBG.png";
+
 import customer1 from "./customer1.jpeg";
 import customer2 from "./customer2.svg";
 
@@ -48,6 +52,9 @@ import thumbnailnikeChrisPaul from "./thumbnailnikeChrisPaul.png";
 import thumbnailnikeLebagh from "./thumbnailnikeLebagh.png";
 
 export {
+  orangeLightBG,
+  redLightBG,
+  blueLightBG,
   kidsService,
   mensService,
   womensService,

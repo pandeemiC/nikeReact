@@ -13,7 +13,13 @@ export default {
     "border-coral-red",
     "border-red-600",
     "border-sky-500",
+    "orangeLightBG",
+    "blueLightBG",
+    "redLightBG",
     "nikelogoBG",
+    "bg-orangeLightBG",
+    "bg-blueLightBG",
+    "bg-redLightBG",
     "nikeSuperImgBlue",
     "nikeSuperImgRed",
     "nikeSuperImgDef",
@@ -73,6 +79,9 @@ export default {
         nikelogoBGRED: "url('assets/images/nikelogoBGRED.png')",
         nikelogoBGBLUE: "url('assets/images/nikelogoBGBLUE.png')",
         bentoBG: "url('assets/images/bentoBG.png')",
+        orangeLightBG: "url('assets/images/orangeLightBG.png')",
+        redLightBG: "url('assets/images/redLightBG.png')",
+        blueLightBG: "url('assets/images/blueLightBG.png')",
       },
 
       backgroundSize: {

@@ -46,7 +46,9 @@ const SuperQuality = ({ theme }) => {
       {/*  IMPLEMENT CAROUSEL ON THIS DIV WHERE EACH IMG IS BACK TO BACK! */}
       {/*  IMPLEMENT GRADIENT LIGHT DEPENDING ON WHAT THEME IT IS AS BG! */}
 
-      <div className="flex-1 flex justify-center items-center">
+      <div
+        className={`flex-1 flex justify-center items-center bg-${theme.gradientClass}`}
+      >
         <img
           src={theme.imgClass}
           width={420}
