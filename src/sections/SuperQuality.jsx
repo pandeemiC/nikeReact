@@ -6,7 +6,7 @@ const SuperQuality = ({ theme }) => {
   return (
     <section
       id="about-us"
-      className="flex justify-between items-center max-lg:flex-col gap-10 w-full max-container pt-0"
+      className={`flex justify-between items-center max-lg:flex-col gap-10 w-full max-container pt-0 bg-${theme.gradientClass} bg-[right_top_-5rem] bg-no-repeat`}
     >
       {/* REMEMBER TO CUSTOM CLASS FROM THE THEMES! YOU CAN IMPORT AFAIK */}
       <div className="flex flex-1 flex-col">
@@ -46,14 +46,12 @@ const SuperQuality = ({ theme }) => {
       {/*  IMPLEMENT CAROUSEL ON THIS DIV WHERE EACH IMG IS BACK TO BACK! */}
       {/*  IMPLEMENT GRADIENT LIGHT DEPENDING ON WHAT THEME IT IS AS BG! */}
 
-      <div
-        className={`flex-1 flex justify-center items-center bg-${theme.gradientClass}`}
-      >
+      <div className={`flex-1 flex justify-center items-center`}>
         <img
           src={theme.imgClass}
           width={420}
           height={420}
-          className="rounded-xl shadow-xl object-contain"
+          className={`rounded-xl shadow-xl object-contain`}
           alt="Image"
         />
       </div>

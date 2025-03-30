@@ -12,7 +12,6 @@ import {
 } from "./sections";
 
 import { nikeSuperImgDef } from "./assets/images";
-import { orangeLightBG } from "./assets/images";
 
 import Nav from "./components/Nav";
 
