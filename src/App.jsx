@@ -5,7 +5,6 @@ import {
   Hero,
   Gallery,
   PopularProducts,
-  SpecialOffer,
   Subscriber,
   Services,
   SuperQuality,
@@ -47,9 +46,6 @@ const App = () => {
       </section>
       <section className="padding-without">
         <Services theme={theme} />
-      </section>
-      <section className="padding">
-        <SpecialOffer />
       </section>
       <section className="padding bg-pale-blue">
         <CustomerReviews />

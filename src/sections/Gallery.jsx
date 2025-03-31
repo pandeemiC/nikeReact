@@ -18,16 +18,16 @@ const Gallery = ({ theme }) => {
           <img
             src={bento1}
             alt="Bento Image 1"
-            className="w-full h-full object-cover rounded-xl"
+            className="w-full h-full object-cover rounded-xl grayscale"
           />
         </div>
 
         {/* Second Image - Covers half of 3 */}
-        <div className="md:col-span-3 max-sm:mr-8 overflow-hidden rounded-xl ">
+        <div className="md:col-span-3 max-sm:mr-8 overflow-hidden rounded-xl">
           <img
             src={bento2}
             alt="Bento Image 2"
-            className="w-full h-full object-cover rounded-xl"
+            className="w-full h-full object-cover rounded-xl grayscale"
           />
         </div>
 
@@ -36,7 +36,7 @@ const Gallery = ({ theme }) => {
           <img
             src={bento3}
             alt="Bento Image 3"
-            className="w-full h-full object-cover rounded-xl"
+            className="w-full h-full object-cover rounded-xl grayscale"
           />
         </div>
 
@@ -45,7 +45,7 @@ const Gallery = ({ theme }) => {
           <img
             src={bento4}
             alt="Bento Image 4"
-            className="w-full h-full object-cover rounded-xl"
+            className="w-full h-full object-cover rounded-xl grayscale"
           />
         </div>
 
@@ -54,7 +54,7 @@ const Gallery = ({ theme }) => {
           <img
             src={bento5}
             alt="Bento Image 5"
-            className="w-full h-full object-cover rounded-xl"
+            className="w-full h-full object-cover rounded-xl grayscale"
           />
         </div>
 
@@ -63,7 +63,7 @@ const Gallery = ({ theme }) => {
           <img
             src={bento6}
             alt="Bento Image 6"
-            className="w-full h-full object-cover rounded-xl"
+            className="w-full h-full object-cover rounded-xl grayscale"
           />
         </div>
       </section>
