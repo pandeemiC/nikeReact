@@ -28,6 +28,16 @@ const PopularProducts = ({ theme }) => {
           {products.map((product) => (
             <PopularProductCard key={product.name} {...product} theme={theme} />
           ))}
+          {products
+            .slice()
+            .reverse()
+            .map((product) => (
+              <PopularProductCard
+                key={product.name}
+                {...product}
+                theme={theme}
+              />
+            ))}
         </div>
       </section>
     </div>
