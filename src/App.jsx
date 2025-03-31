@@ -23,7 +23,7 @@ const App = () => {
     borderClass: "border-coral-red",
     fontWeight: "font-light",
     imgClass: nikeSuperImgDef,
-    gradientLight: "orangeLightBG",
+    gradientClass: "orangeLightBG",
     justdoitBG: "justdoitOrangeBG",
   });
 
