@@ -47,7 +47,7 @@ const App = () => {
       <section className="padding-without">
         <Services theme={theme} />
       </section>
-      <section className="padding-without bg-white border-t-3 rounded-xl">
+      <section className="padding-without bg-black border-t-3 rounded-xl">
         <CustomerReviews theme={theme} />
       </section>
       <section className="padding-without padding-y py-16 w-full">
